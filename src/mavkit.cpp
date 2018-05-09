@@ -236,9 +236,9 @@ int main(int argc, char* argv[])
     while(true)
     {
         //MSG1
-        mavlink_message_t msg;
-        mavlink_msg_heartbeat_pack(1, 2, &msg, MAV_TYPE_SUBMARINE, MAV_AUTOPILOT_GENERIC, MAV_MODE_PREFLIGHT, 0, MAV_STATE_STANDBY);
-        master->send_message(msg);
+        //mavlink_message_t msg;
+        //mavlink_msg_heartbeat_pack(1, 2, &msg, MAV_TYPE_SUBMARINE, MAV_AUTOPILOT_GENERIC, MAV_MODE_PREFLIGHT, 0, MAV_STATE_STANDBY);
+        //master->send_message(msg);
         usleep(1000000);
     }
     // master->join();
