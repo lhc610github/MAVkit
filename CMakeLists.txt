@@ -8,7 +8,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 set(MAVLINK_DIR ../include/mavlink)
 set(MAVLINK_VERSION 2.0)
 set(MAVLINK_HEADERS_DIR generated/mavlink_headers)
-execute_process(COMMAND python ${MAVLINK_DIR}/pymavlink/tools/mavgen.py --lang=C --wire-protocol=${MAVLINK_VERSION} --output=${MAVLINK_HEADERS_DIR} ${MAVLINK_DIR}/message_definitions/v1.0/ardupilotmega.xml)
+execute_process(COMMAND python ${MAVLINK_DIR}/pymavlink/tools/mavgen.py --lang=C --wire-protocol=${MAVLINK_VERSION} --output=${MAVLINK_HEADERS_DIR} ${MAVLINK_DIR}/message_definitions/v1.0/common.xml)
 
 ################################################################################
 #PACKAGES
